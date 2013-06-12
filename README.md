@@ -14,7 +14,7 @@ When defining a custom input a "Hint Text" option will be available.  Enter the 
 
 You will be able to see what inputs have hint text supplied and what it is directly from the "Custom Fields" grid.
 
-![Custom field grid screenshot](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/custom_field_grid.png)
+![Custom field grid screenshot](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/custom_fields_grid.png)
 
 ## User Experience
 
