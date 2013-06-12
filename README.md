@@ -1,24 +1,38 @@
-Redmine Custom Field Hints
-==========================
+# ![](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/icon-small.png) Redmine Custom Field Hints
 
-Adds hints to custom fields for Redmine
+Adds functionality for text-based custom fields to have autohints defined for them which disappear when the user focuses the field. 
 
-= Installation =
+## Installation
 
 Follow normal Redmine Plugin installation instructions
 
-= Usage =
+## Usage
 
 When defining a custom input a "Hint Text" option will be available.  Enter the text you want to show as a hint for that input.
 
-= User Experience =
+![Editing custom field screenshot](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/custom_field_edit.png)
 
-When a user goes to add an issue, any input[type="text"] or textarea fields will appear to be prefilled with the value of the hint defined in the settings.
+You will be able to see what inputs have hint text supplied and what it is directly from the "Custom Fields" grid.
 
-Once a user focuses the input, the text will disappear.  If they leave it empty (or what equates to empty after removing leading and trailing whitespace) or enter the same value as the autohint it will revert to the autohint text.  Any input that is not empty and doesn't match the autohint text will be left alone.
+![Custom field grid screenshot](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/custom_field_grid.png)
 
-= Version History =
+## User Experience
 
-== 0.0.1 ==
+When a user creates or edits an issue, any field that has a hint defined will have that hint displayed in a light gray color.
+
+![Issue edit custom field screenshot](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/custom_field_issue_edit.png)
+
+When the user puts focus on that field, the contents disappear placing the cursor at the beginning of the input.  Once text has been entered, the user's input will remain.  If the user leaves the field empty, or what equates to being empty like only entering spaces, then the hinted text will appear and the contents will be truncated.
+
+![Issue edit custom field focused screenshot](https://github.com/bpat1434/redmine_custom_field_hints/raw/master/docs/custom_field_issue_edit_focused.png)
+
+# Version History
+
+## 0.0.2
+
+* Bug: Forms loaded via AJAX do not display autohints
+* Bug: All inputs could have an autohint value even though it's not appropriate for them
+
+## 0.0.1
 
 Initial release of plugin
