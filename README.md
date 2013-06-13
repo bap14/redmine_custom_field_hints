@@ -28,6 +28,10 @@ When the user puts focus on that field, the contents disappear placing the curso
 
 # Version History
 
+## 0.0.3
+
+* Bug: Not all comst field types allow for hints to be defined
+
 ## 0.0.2
 
 * Bug: Forms loaded via AJAX do not display autohints
