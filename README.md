@@ -28,6 +28,10 @@ When the user puts focus on that field, the contents disappear placing the curso
 
 # Version History
 
+## 0.0.4
+
+* Add support for Redmine 2.5.x
+
 ## 0.0.3
 
 * Bug: Not all custom field types allow for hints to be defined
