@@ -24,9 +24,9 @@ module RedmineCustomFieldHints
       
           tag_options = {:id => field_id, :class => "#{custom_field.field_format}_cf"}
           
-          field_format = custom_field.format.label
+          field_format = custom_field.format
           
-          case field_format.try(:edit_as)
+          case field_format.format_name
           when "bool"
           when "list"
           else
@@ -36,7 +36,7 @@ module RedmineCustomFieldHints
             end
           end
           
-          case field_format.try(:edit_as)
+          case field_format.format_name
           when "date"
             text_field_tag(field_name, custom_value.value, tag_options.merge(:size => 10)) +
             calendar_for(field_id)
