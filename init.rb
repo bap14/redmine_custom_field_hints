@@ -4,7 +4,7 @@ Redmine::Plugin.register :redmine_custom_field_hints do
   name 'Redmine Custom Field Hints'
   author 'Brett Patterson'
   description 'Adds ability for custom fields to have hints'
-  version '0.0.4'
+  version '0.0.4.1'
 
   requires_redmine :version_or_higher => '2.5.0'
 end

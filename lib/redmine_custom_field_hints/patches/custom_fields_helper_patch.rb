@@ -24,7 +24,7 @@ module RedmineCustomFieldHints
       
           tag_options = {:id => field_id, :class => "#{custom_field.field_format}_cf"}
           
-          field_format = Redmine::CustomFieldFormat.find_by_name(custom_field.field_format)
+          field_format = custom_field.format.label
           
           case field_format.try(:edit_as)
           when "bool"

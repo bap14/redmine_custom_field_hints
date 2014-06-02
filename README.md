@@ -28,6 +28,10 @@ When the user puts focus on that field, the contents disappear placing the curso
 
 # Version History
 
+## 0.0.4.1
+
+* Fix issue with Redmine::CustomFieldFormat class
+
 ## 0.0.4
 
 * Add support for Redmine 2.5.x
