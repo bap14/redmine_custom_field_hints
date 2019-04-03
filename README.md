@@ -28,6 +28,9 @@ When the user puts focus on that field, the contents disappear placing the curso
 
 # Version History
 
+## 1.0.0
+* Update to support Rails 5
+
 ## 0.0.4.1
 
 * Fix issue with Redmine::CustomFieldFormat class
