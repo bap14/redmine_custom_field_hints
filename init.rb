@@ -14,6 +14,6 @@ require 'redmine_custom_field_hints/hooks/redmine_custom_field_hints_hooks'
 ((Rails.version > "5")? ActiveSupport::Reloader : ActionDispatch::Callbacks).to_prepare do
   require_dependency 'custom_fields_helper'
   unless CustomFieldsHelper.included_modules.include? RedmineCustomFieldHints::Patches::CustomFieldsHelperPatch
-    CustomFieldsHelper.send(:include, RedmineCustomFieldHints::Patches::CustomFieldsHelperPatch)
+    CustomFieldsHelper.send(:prepend, RedmineCustomFieldHints::Patches::CustomFieldsHelperPatch)
   end
 end
